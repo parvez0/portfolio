@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Searching algorithms</title>
+    </head>
+    <style>
+        .search-effect {
+            background: #ffc106;
+        }
+        .search-success{
+            background: #37ab4e;
+        }
+        .number-class{
+            display: inline-block;
+            padding: 4px;
+            border: solid 1px;
+            margin: 0px;
+            width: 100px;
+            text-align: center;
+        }
+    </style>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="searching.js"></script>
+    <body onload="generateNumbers()" class="root">
+        <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+            <div class="form-inline">
+                <input class="form-control mr-sm-2" type="search" id="number-to-search" placeholder="Number" aria-label="Search">
+                <button class="btn btn-outline-primary" onclick="startSearching()">Search</button> &nbsp;&nbsp;
+                <button class="btn btn-outline-secondary" onclick="resetFields()">Reset</button>
+            </div>
+         </nav>
+        <div class="numbers" style="margin: 15px">
+
+        </div>
+    </body>
+</html>
