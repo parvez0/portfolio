@@ -1,2 +1,0 @@
-# portfolio
-somethings about me
