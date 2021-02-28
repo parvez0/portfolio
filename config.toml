@@ -120,7 +120,7 @@ target = "blank"
 name = "Medium"
 icon = "fa fa-medium"
 weight = 5
-url = "https://medium.com/@johndoe"
+url = "https://medium.com/@syedparvez"
 target = "blank"
 
 [languages]
@@ -138,8 +138,3 @@ url = "about/"
 name = "Blog"
 weight = 2
 url = "posts/"
-
-[[languages.en.menu.main]]
-name = "Contact me"
-weight = 5
-url = "contact/"

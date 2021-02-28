@@ -1,0 +1,55 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+spec:
+  selector:
+    matchLabels:
+      app: service-app
+      tier: backend
+      track: stable
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1        # how many pods we can add at a time
+      maxUnavailable: 1
+  template:
+    metadata:
+      labels:
+        app: service-app
+        tier: backend
+        track: stable
+    spec:
+      containers:
+        - name: app
+          image: "parvez0/portfolio:v1.1.2"
+          ports:
+            - name: http
+              containerPort: 80
+            - name: https
+              containerPort: 443
+          volumeMounts:
+            - mountPath: "/etc/nginx/ssl"
+              name: nginx-ssl
+              readOnly: true
+      volumes:
+        - name: nginx-ssl
+          secret:
+            secretName: parvez-tech-ssl
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: service-app
+spec:
+  type: LoadBalancer
+  selector:
+    app: service-app
+  ports:
+    - port: 80
+      targetPort: 80
+      name: http
+    - port: 443
+      targetPort: 443
+      name: https
