@@ -22,11 +22,12 @@ info = "Site Reliability Engineer"
 avatarURL = "images/avatar.jpg"
 #gravatar = "syedparvez72@gmail.com"
 footerContent = ""
+footerMessage = "All rights reserved."
 
 dateFormat = "January 2, 2006"
 
 hideFooter = false
-hideCredits = false
+hideCredits = true
 hideCopyright = false
 since = 2021
 
