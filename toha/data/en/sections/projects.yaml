@@ -1,0 +1,46 @@
+# section information
+section:
+  name: Projects
+  id: projects
+  enable: true
+  weight: 5
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# filter buttons
+buttons:
+  - name: Professional
+    filter: "professional"
+  - name: Academic
+    filter: "academic"
+  - name: Hobby
+    filter: "hobby"
+
+# your projects
+projects:
+  - name: Wabacli
+    logo: /images/sections/projects/whatsapp_logo.png
+    role: Developer
+    timeline: "March 2020 - Present"
+    repo: https://github.com/parvez0/wabacli # If your project is a public repo on GitHub, then provide this link. it will show star count.
+    #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+    summary: Whatapp business API's command line interface.
+    tags: ["whatsapp", "cli"]
+
+  - name: Go Cache
+    logo: /images/sections/projects/go.png
+    role: Developer
+    timeline: "January 2021 - February 2021"
+    repo: https://github.com/parvez0/go-cache
+    #url: ""
+    summary: A simple memory cache server with go concurrency.
+    tags: ["cache", "concurrency"]
+
+  - name: Campaigns Scheduler
+    logo: /images/sections/projects/nodejs.jpeg
+    role: Developer
+    timeline: "October 2020 - November 2020"
+    repo: "https://github.com/parvez0/campaigns/tree/master/backend"
+    summary: REST Application to schedule workers on docker and kubernetes.
+    tags: ["node.js","express", "docker", "kubernetes"]

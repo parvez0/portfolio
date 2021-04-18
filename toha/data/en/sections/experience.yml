@@ -1,0 +1,66 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your experiences
+experiences:
+  - company:
+      name: Media.net.
+      url: "https://www.media.net/"
+      location: Bangalore, IN
+      # company overview
+      overview: Media.net is a leading global advertising company with one of the most comprehensive portfolios of advertising technology in the industry across search, native, display, mobile, local, products and video.
+    positions:
+      - designation: Site Reliability Engineer II
+        start: March 2021
+        # don't provide end date if you are currently working there. It will be replaced by "Present"
+        # end: Dec 2020
+        # give some points about what was your responsibilities at the company.
+        responsibilities:
+          - Incorporate various software engineering aspects to develop and implement services that improve infrastructure.
+          - Design, develop and manage disaster recovery tool that backup Kubernetes volumes, databases, and cluster's resource definition.
+          - Ensure high reliability into systems by working closely with software development and IT-operations teams.
+          - Build tools for monitoring and alerting or production systems to ensure high availability of the systems.
+
+  - company:
+      name: Yellow Messenger.
+      url: "https://www.yellowmessenger.com"
+      location: Bangalore, IN
+      overview: Yellow Messenger provides an enterprise with an AI-platform to build rich conversational chatbot experiences for customers and employees.
+    positions:
+      - designation: Software Development Engineer - II
+        start: January 2020
+        end: February 2021
+        responsibilities:
+          - Develop high-quality software design and architecture.
+          - Collaborate with internal teams and vendors to fix and improve products.
+          - Review and debug code, perform validation and verification testing.
+          - Lead a team and be a mentor to junior developers.
+
+      - designation: Software Development Engineer
+        start: May 2018
+        end: December 2020
+        responsibilities:
+          - Develop well designed and well tested multi-tier architecture applications.
+          - Execute full software development life cycle (SDLC).
+          - Troubleshoot, debug and upgrade existing systems.
+
+  - company:
+      name: Intern at Jobs Effect.
+      url: "https://www.jobseffect.com"
+      location: Hyderabad IN
+      overview: Jobs effects is a training and development, manpower consulting and Recruitment Company.
+    positions:
+      - designation: Intern
+        start: Jan 2018
+        end: March 2018
+        responsibilities:
+          - Write clean and testable code.
+          - Document and maintain software functionality.
+          - Comply with project plans and industry standards.

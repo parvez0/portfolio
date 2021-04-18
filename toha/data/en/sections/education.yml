@@ -1,0 +1,37 @@
+# section information
+section:
+  name: Education
+  id: education
+  template: sections/education.html # Use "sections/education-alt.html for alternate template.
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+degrees:
+  - name: Bachelor of Technology in Computer Science
+    icon: fa-microscope
+    timeframe: 2014-2018
+    institution:
+      name: Jawaharlal Nehru Technological University
+      url: "https://jntuh.ac.in/"
+    takenCourses: #(optional)
+      # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
+      showGrades: false
+      courses:
+        - name: Data Structures and Algorithm
+          achieved: 3.75
+          outOf: 4
+        - name: Network Security and Cryptography
+          achieved: 3.80
+          outOf: 4
+        - name: Operating System
+          achieved: 3.5
+          outOf: 4
+        - name: Cloud Computing
+          achieved: 3.75
+          outOf: 4
+    publications: #(optional)
+      - title: Defect Tracking System, Internaltional Journal of Applied Engineering Research Volume 5, Issue III, March 2017.
+        url: "https://www.ijraset.com/fileserve.php?FID=6569"
