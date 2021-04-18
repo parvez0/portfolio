@@ -18,7 +18,7 @@ disqusShortname = "parvez"
 author = "Syed Parvez"
 description = "Syed Parvez's portfolio"
 keywords = "blog,developer,personal"
-info = "Site Reliability Engineer"
+info = "Site Reliability Engineer ( SDE-II )"
 avatarURL = "images/avatar.jpg"
 #gravatar = "syedparvez72@gmail.com"
 footerContent = ""
@@ -136,6 +136,11 @@ weight = 1
 url = "about/"
 
 [[languages.en.menu.main]]
-name = "Blog"
+name = "Projects"
 weight = 2
-url = "posts/"
+url = "projects/"
+
+[[languages.en.menu.main]]
+name = "Resume"
+weight = 3
+url = "resume/"

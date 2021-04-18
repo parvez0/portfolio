@@ -10,4 +10,10 @@ title = "About"
 showpagemeta = false 
 +++
 
-I am a Site Reliability Engineer, with experience in managing high traffic system clusters, architecting and developing monitoring tools. I have been programming since 2018. You'll find lots of info about my various projects on my [GitHub](https://github.com/parvez0?tab=repositories).
+I am a veteran software developer who has developed multi-tier applications using cutting-edge technologies. I specialize in building microservices-driven containerized applications specific to business needs.
+
+I've gained experience working as a software developer for one of the leading startups which helped me gain insights into all phases of software development from initial design and implementation to deployment and maintenance.
+
+I have 3 years of experience as a developer and love working with Golang and distributed systems. And yeah I know with this experience I am calling myself a veteran but hey don't take my word for it you can give me a chance and decide yourself.
+
+What can I do ? [Checkout my resume](/resume)

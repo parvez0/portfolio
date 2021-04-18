@@ -185,7 +185,7 @@ models:
   post:
     type: page
     label: Blog post
-    folder: posts
+    folder: projects
     fields:
       - type: string
         name: title

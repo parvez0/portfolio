@@ -46,15 +46,15 @@
       {{ end }}
     {{ end }}
 
-    {{ if  or (eq .Site.Params.colorScheme "auto") (eq .Site.Params.colorScheme "dark") }}
+    {{ if  or (eq .Site.Params.colorScheme "auto") (eq .Site.Params.colorScheme "light") }}
       {{ if .Site.IsServer }}
-        {{ $cssOpts := (dict "targetPath" "css/coder-dark.css" "enableSourceMap" true ) }}
-        {{ $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
-      {{ else }}
         {{ $cssOpts := (dict "targetPath" "css/coder-dark.css" ) }}
         {{ $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts | minify | fingerprint }}
         <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+      {{ else }}
+        {{ $cssOpts := (dict "targetPath" "css/coder-dark.css" "enableSourceMap" true ) }}
+        {{ $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts }}
+        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
       {{ end }}
     {{ end }}
 
@@ -105,9 +105,15 @@
     <main class="wrapper">
       {{ partial "header.html" . }}
 
-      <div class="content">
-        {{ block "content" . }}{{ end }}
-      </div>
+      {{ if (eq .Title "Resume") }}
+        <div class="content">
+          {{ partial "resume.html" . }}
+        </div>
+      {{ else }}
+        <div class="content">
+          {{ block "content" . }} {{ end }}
+        </div>
+      {{end}}
 
       {{ partial "footer.html" . }}
     </main>
