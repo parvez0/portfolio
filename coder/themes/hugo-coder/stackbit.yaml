@@ -185,7 +185,7 @@ models:
   post:
     type: page
     label: Blog post
-    folder: projects
+    folder: projects.yaml
     fields:
       - type: string
         name: title
