@@ -34,20 +34,21 @@ skills:
     summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs. Have good understanding of networking layer."
     url: "https://kubernetes.io/"
 
+  - name: Cloud Computing
+    logo: /images/sections/skills/cloud.png
+    summary: "Worked with most of the major cloud providers such as GCP, AWS, Azure etc."
+
   - name: Prometheus
     logo: /images/sections/skills/prometheus.png
     summary: "Capable of setup, configure Prometheus metrics. Experienced with PromQL, AlertManager. Also, experienced with writing metric exporters."
     url: "https://prometheus.io/"
 
+  - name: MongoDB
+    logo: /images/sections/skills/mongodb.png
+    summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
+    url: "https://www.mongodb.com/"
+
   - name: Linux
     logo: /images/sections/skills/linux.png
     summary: "Using as the main operating system. Capable of writing bash/shell scripts."
 
-  - name: Cloud Computing
-    logo: /images/sections/skills/cloud.png
-    summary: "Worked with most of the major cloud providers such as GCP, AWS, Azure etc."
-
-  - name: Git
-    logo: /images/sections/skills/git.png
-    summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
-    url: "https://git-scm.com/"
