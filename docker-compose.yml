@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   web-server:
-    image: parvez0/portfolio:v2.0.3
+    image: parvez0/portfolio:v2.0.4
     ports:
       - "80:80"
       - "443:443"
